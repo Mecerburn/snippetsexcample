@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Repository Interface</Title>
+			<Shortcut>repoi</Shortcut>
+			<Description>Create a repository interface for a specified class</Description>
+			<Author>Riaan Swart</Author>
+        </Header>
+        <Snippet>
+            <Declarations>
+				<Literal>
+					<ID>classObject</ID>
+					<ToolTip>Property type</ToolTip>
+					<Default>ClassObject</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[public interface I$classObject$Repository : IRepository<$classObject$>
+			{
+			Task<$classObject$> Get$classObject$ByName(string name);
+			}
+	$end$]]>
+			</Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Repository Concrete</Title>
+			<Shortcut>repoc</Shortcut>
+			<Description>Create a repository class for a specified class</Description>
+			<Author>Riaan Swart</Author>
+        </Header>
+        <Snippet>
+            <Declarations>
+				<Literal>
+					<ID>classObject</ID>
+					<ToolTip>Property type</ToolTip>
+					<Default>ClassObject</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[public class $classObject$Repository : Repository<$classObject$>, I$classObject$Repository
+			{
+			public $classObject$Repository(DbContext dbContext) : base(dbContext)
+			{
+			}
+			}
+	$end$]]>
+			</Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
